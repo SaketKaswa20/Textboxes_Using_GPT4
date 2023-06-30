@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .textbox {
+      width: 300px;
+      height: 50px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background-color: #555;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .textbox:focus {
+      outline: none;
+      box-shadow: 0 0 5px #6cb2eb;
+    }
+
+    .textbox1 {
+      animation: slideIn 1s ease-in-out infinite alternate;
+    }
+
+    .textbox2 {
+      animation: rotate 2s linear infinite;
+    }
+
+    .textbox3 {
+      animation: colorChange 3s linear infinite;
+    }
+
+    .textbox4 {
+      animation: fade 2s linear infinite alternate;
+    }
+
+    .textbox5 {
+      animation: scale 1s ease-in-out infinite alternate;
+    }
+
+    .textbox6 {
+      animation: shake 0.5s linear infinite alternate;
+      background-color: #f44336;
+    }
+
+    .textbox7 {
+      animation: blink 1s ease-in-out infinite alternate;
+      background-color: #4caf50;
+    }
+
+    .textbox8 {
+      animation: spin 2s ease-in-out infinite alternate;
+      background-color: #9c27b0;
+    }
+
+    .textbox9 {
+      animation: slideInFromTop 1s ease-in-out infinite alternate;
+      background-color: #03a9f4;
+      color: #000;
+    }
+
+    .textbox10 {
+      animation: rotateAndScale 2s linear infinite;
+      background-color: #ffc107;
+    }
+
+    .textbox11 {
+      animation: fadeInOut 2s linear infinite alternate;
+      background-color: #e91e63;
+    }
+
+    .textbox12 {
+      animation: bounce 1s ease-in-out infinite alternate;
+      background-color: #00bcd4;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #fff;
+      }
+      50% {
+        color: #ff0000;
+      }
+      100% {
+        color: #fff;
+      }
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(0);
+      }
+      75% {
+        transform: translateX(5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateAndScale {
+      0% {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+      }
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" class="textbox textbox1" placeholder="Slide In Animation">
+    <input type="text" class="textbox textbox2" placeholder="Rotation Animation">
+    <input type="text" class="textbox textbox3" placeholder="Color Change Animation">
+    <input type="text" class="textbox textbox4" placeholder="Fade Animation">
+    <input type="text" class="textbox textbox5" placeholder="Scale Animation">
+    <input type="text" class="textbox textbox6" placeholder="Shake Animation">
+    <input type="text" class="textbox textbox7" placeholder="Blink Animation">
+    <input type="text" class="textbox textbox8" placeholder="Spin Animation">
+    <input type="text" class="textbox textbox9" placeholder="Slide In From Top Animation">
+    <input type="text" class="textbox textbox10" placeholder="Rotate and Scale Animation">
+    <input type="text" class="textbox textbox11" placeholder="Fade In and Out Animation">
+    <input type="text" class="textbox textbox12" placeholder="Bounce Animation">
+  </div>
+</body>
+</html>
